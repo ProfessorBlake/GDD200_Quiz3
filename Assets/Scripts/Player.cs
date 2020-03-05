@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-	public float MoveSpeed = 1f;
+	public float MoveSpeed = 4f;
 
 	private void Update()
 	{
@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		Time.timeScale = 0f;
-		Destroy(gameObject);
+		//Pause game and destroy player.
 	}
 }

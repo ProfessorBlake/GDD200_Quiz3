@@ -16,9 +16,9 @@ public class Spawner : MonoBehaviour
 		if(spawnDelay <= 0f)
 		{
 			spawnDelay = 1f;
-			GameObject ball = Instantiate(EnemyPrefabArray[Random.Range(0,EnemyPrefabArray.Length)], transform.position, Quaternion.identity);
-			ball.transform.position += new Vector3(0f, Random.Range(-4f, 4f), 0f);
-			Score.Points += 1;
+
+			//Add instantiating code here.
+
 			ScoreText.text = "Score: " + Score.Points;
 		}
 	}
